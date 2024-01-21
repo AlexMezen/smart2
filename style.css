@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #447787;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.banner {
+  width: 100%;
+}
+.komek-title-block {
+  width: 100%;
+  background-color: #123d4b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adress-num-logo:hover .title-adress,
+.adress-num-logo:hover .sub-title-adress {
+    text-decoration: underline;
+}
+
+.title-adress {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+.title-number {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nubmer-wrapper:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.sub-title-adress {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a0aeb7;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  margin-right: 20px;
+}
+.soc {
+  transition: filter 0.1s ease;
+  margin-right: 5px;
+}
+
+.soc:hover {
+  filter: brightness(150%);
+}
+
+.logo-adress {
+  display: flex;
+  width: 55%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 5px;
+}
+.adress-num-logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.ticket-button {
+  width: 150px;
+  border-radius: 16px;
+  background: #e92b43;
+  padding: 8px 16px 8px 16px;
+  border: 0;
+  color: white !important;
+  transition: background 0.2s ease;
+  margin-left: 5px;
+}
+.ticket-button-log {
+  width: 150px;
+  min-width: 150px;
+  border-radius: 16px;
+  background: #e92b43;
+  padding: 8px 16px 8px 16px;
+  border: 0;
+  color: white !important;
+  transition: background 0.2s ease;
+}
+.ticket-button-log:hover {
+  background: #c0253d;
+}
+.ticket-button:hover {
+  background: #c0253d;
+  cursor: pointer;
+}
+.nav-block {
+  width: 100%;
+  padding: 10px;
+}
+.nav-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-block li {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: white;
+}
+
+.nav-block a {
+  text-decoration: none;
+  color: black;
+}
+
+.li-style {
+  transition: border-bottom 0.1s ease-out;
+}
+
+.li-style:hover {
+  border-bottom: 5px solid #f44336;
+}
+
+.button-block {
+  background: #f2f2f5;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.block-button {
+  border-radius: 16px;
+  background-color: white;
+  padding: 8px 16px 8px 16px;
+  border: 0;
+  transition: background 0.2s ease;
+  max-width: 200px;
+  margin: 5px 5px;
+}
+.block-button:hover {
+  background: #e92b43;
+  color: white;
+  cursor: pointer;
+}
+.card-block {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  flex-basis: calc(100% / 4);
+  margin-top: 30px;
+}
+
+.card img {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover img {
+  box-shadow: 0 0 0 3px black;
+}
+.card:hover .title-card {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+.title-card {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+}
+.wrapper-genre {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-title-card {
+  color: #727276;
+  background: #f2f2f5;
+  width: 20%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 1px 0px;
+  margin-top: 20px;
+  margin-right: 5px;
+  flex-basis: calc(80% / 3);
+}
+.time-cost-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: calc(80% / 3);
+  transition: transform 0.1s ease-in-out;
+}
+
+.time {
+  background: #e92b43;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: background 0.1s ease-in-out;
+}
+.cost {
+  border: 2px solid #e92b43;
+  border-radius: 0px 0px 3px 3px;
+  width: 100%;
+  border-top: none;
+  margin-top: -2px;
+  padding: 3px;
+  font-size: 11px;
+}
+.time-cost-block:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.time-cost-block:hover .time {
+  background: #ff0000;
+}
+
+.hall {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4c4c4f;
+  margin-left: 23px;
+  margin-top: 5px;
+  width: 100%;
+}
+.wrapper-time-cost {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.card-block-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  width: 100%;
+}
+.wrapper-genre {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .komek-title-block {
+    align-items: center;
+  }
+  .logo-adress {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .adress-num-logo {
+    margin: 20px 0;
+  }
+  .socials {
+    width: 80%;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  .ticket-button {
+    margin: 10px auto;
+  }
+  .socials-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    flex-basis: calc(100% / 2);
+  }
+  .afisha{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .komek-title-block {
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-block {
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .afisha {
+    width: 240px;
+
+  }
+}
